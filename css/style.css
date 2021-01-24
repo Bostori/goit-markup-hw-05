@@ -153,6 +153,8 @@ img {
   margin-right: 10px;
   align-items: center;
   justify-content: center;
+
+  transition: --color2 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .insta {
   display: flex;
@@ -160,8 +162,12 @@ img {
   height: 44px;
   border: none;
   border-radius: 50%;
+
   align-items: center;
   justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   background-color: var(--adress-color);
 }
 
@@ -191,6 +197,8 @@ img {
   height: 12px;
 
   margin-right: 10px;
+
+  transition: --color1 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-contacs:hover,
@@ -217,6 +225,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--dark-color);
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flexbox {
@@ -248,6 +258,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-color);
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn {
@@ -294,17 +306,24 @@ img {
 }
 
 .btn {
-  background-color: var(--accent-color);
+  display: flex;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
+  letter-spacing: 0.06em;
+
+  margin: auto;
+
   text-decoration: none;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--adress-color);
-  margin: auto;
+
+  background-color: var(--accent-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-box {
@@ -362,6 +381,8 @@ img {
   height: auto;
   left: 215px;
   top: 262px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-box:nth-child(3n) {
@@ -383,6 +404,8 @@ img {
   letter-spacing: 0.03em;
 
   color: tomato;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-text:hover .cart {
@@ -405,6 +428,8 @@ img {
   background: rgba(33, 150, 243, 0.9);
 
   opacity: 0;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hover-text:hover,
 .cart:hover::before {
@@ -559,6 +584,9 @@ img {
   border: 1px solid var(--client-color);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    --color1 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover,
