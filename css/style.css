@@ -374,7 +374,7 @@ img {
   height: 168px;
   margin: 65px 25px;
 
-  opacity: 0;
+  /* opacity: 0; */
 
   font-style: normal;
   font-weight: normal;
@@ -382,10 +382,10 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
 
-  color: (var(--adress-color);
+  color: tomato;
 }
 
-.cart {
+.hover-text:hover .cart {
   display: flex;
   position: relative;
 }
@@ -393,23 +393,22 @@ img {
 .cart > .hover-text {
   position: absolute;
 }
+
 .cart::before {
   display: inline-block;
   content: "";
   position: absolute;
-  width: 100%;
-
+  width: 370px;
   height: 294px;
   left: 0;
   top: 0;
-
   background: rgba(33, 150, 243, 0.9);
 
   opacity: 0;
 }
 .hover-text:hover,
 .cart:hover::before {
-  opacity: 1;
+  transform: translateY(-100%);
 }
 .section-item {
   width: calc((100% - 90px) / 4);
